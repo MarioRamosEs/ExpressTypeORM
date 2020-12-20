@@ -5,8 +5,8 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "author": {
-    "name": "Umed Khudoiberdiev",
-    "email": "pleerock.me@gmail.com"
+    "name": "Mario Ramos",
+    "email": "marioramosmontesinos@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,20 @@
     "typeorm": "^0.2.29"
   },
   "scripts": {
-    "start": "tsc && node src/index.js"
+    "start": "tsc && node src/index.js",
+    "serve": "nodemon"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "npm start",
+    "ext": "ts"
   }
 }
