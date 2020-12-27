@@ -1,15 +1,18 @@
 {
-    "version": "2.4.2",
     "compilerOptions": {
-        "lib": ["es5", "es6"],
-        "target": "es6",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "sourceMap": true
-    },
-    "exclude": [
-        "node_modules"
-    ]
-}
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": "./",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "commonjs",
+      "target": "es2019",
+      "outDir": "./build",
+      "paths": {
+        "~/*": [
+          "src/*"
+        ]
+      },
+      "sourceMap": true
+    }
+  }

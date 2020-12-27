@@ -1,7 +1,7 @@
 {
   "name": "typeorm-typescript-express-example",
   "version": "0.0.1",
-  "description": "Example how to use Express and TypeORM with TypeScript.",
+  "description": "Example how to use Express and TypeORM with TypeScript",
   "license": "MIT",
   "readmeFilename": "README.md",
   "author": {
@@ -10,10 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/typeorm/typescript-express-example.git"
-  },
-  "bugs": {
-    "url": "https://github.com/typeorm/typescript-express-example/issues"
+    "url": "https://github.com/MarioRamosEs/ExpressTypeORM.git"
   },
   "tags": [
     "orm",
@@ -42,9 +39,10 @@
     "typeorm": "^0.2.29"
   },
   "scripts": {
-    "start": "tsc && node src/index.js",
+    "start": "tsc && node build/index.js",
     "serve": "nodemon",
-    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts}' --quiet --fix"
+    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts}' --quiet --fix",
+    "clean": "git clean -xdf"
   },
   "nodemonConfig": {
     "ignore": [
