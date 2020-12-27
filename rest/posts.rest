@@ -1,0 +1,22 @@
+GET http://localhost:3000/posts
+
+###
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+	"title":"test3",
+	"text":"gsdgdsfsdfs",
+	"categories":[
+		{
+			"id": "2",
+			"name": "Cat1"
+		}
+	]
+}
+
+###
+GET http://localhost:3000/posts/9
+
+###
+DELETE http://localhost:3000/posts/9
